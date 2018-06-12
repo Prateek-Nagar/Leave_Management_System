@@ -1,0 +1,10 @@
+change position_id to question id
+change position_name to question
+change tbpositions to questions
+change candidate position to question name
+change candidate name to options 
+change candidate_cvotes to choices(made by people)
+change candidate_id to opition id
+change tbcandidates to options
+note:user=kahiga@gmail.com password=kimani
+admin=admin@ps.anu.ac.ke password=admin

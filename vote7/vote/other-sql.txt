@@ -1,0 +1,4 @@
+select DISTINCT (q.question_id) from questions q join student_votes s on q.question_id=s.question_id where q.accepted='yes' and s.member_id<>1
+select s.question_id from student_votes s,questions q where q.question_id<>s.question_id and q.accepted='yes'
+select * from questions q join student_votes s on q.question_id=s.question_id where q.accepted='yes' and s.member_id<>1 and q.question_id In (SELECT q.question_id from questions q join student_votes s on q.question_id<>s.question_id where q.accepted='yes')
+select * from questions q join student_votes s on q.question_id=s.question_id where q.accepted='yes' and s.member_id<>1 SELECT * from questions q join student_votes s on q.question_id<>s.question_id where q.accepted='yes'

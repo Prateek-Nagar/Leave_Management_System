@@ -1,0 +1,1 @@
+select q.* from questions q join student_votes s on q.question_id=s.question_id where q.accepted='yes' and s.member_id<>1 union select * from questions q where q.accepted='yes' and q.question_id not in (SELECT DISTINCT(s.question_id) from student_votes s)
